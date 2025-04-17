@@ -3,65 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce - Supporting Local Businesses">
-    <title>Chamber of Commerce - Home</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script defer src="scripts/weather.js"></script>
-    <script defer src="scripts/spotlight.js"></script>
+    <meta name="description" content="Anime and Art Community - Connect with fellow anime lovers and artists.">
+    <meta property="og:title" content="Anime and Art Community">
+    <meta property="og:description" content="Join the anime and art community to share your art and discover new works.">
+    <meta property="og:image" content="favicon.png">
+    <title>Anime and Art Community</title>
+    <link rel="icon" href="favicon.png">
+    <style>
+        /* Inline CSS for homepage styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <div class="logo">
-            <img src="images/international-chamber-of-commerce-1024x731.webp" alt="Chamber of Commerce Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="join.html">Join</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to Anime and Art Community</h1>
     </header>
-
-    <!-- Hero Image Section -->
-    <section class="hero">
-        <img src="images/png-transparent-business-networking-marketing-chamber-of-commerce-business-opportunity-meeting-service-team-public-relations-thumbnail.png" alt="Chamber Hero Image">
-        <div class="cta">
-            <a href="join.html">Join the Chamber Today!</a>
-        </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section>
+        <h2>Join the Community</h2>
+        <p>Connect with fellow anime fans and artists. Share your creations, discover new works, and be a part of our growing community.</p>
     </section>
-
-    <!-- Current Events Section -->
-    <section class="current-events">
-        <h2>Current Events</h2>
-        <ul>
-            <li>Chamber Networking Mixer - April 10th, 2025</li>
-            <li>Monthly Chamber Meeting - April 20th, 2025</li>
-        </ul>
-    </section>
-
-    <!-- Weather Section -->
-    <section class="weather" id="weather">
-        <h2>Current Weather</h2>
-        <div id="weather-data">
-            <p>Loading weather data...</p>
-        </div>
-    </section>
-
-    <!-- Spotlight Section -->
-    <section class="spotlights">
-        <h2>Featured Chamber Members</h2>
-        <div id="spotlight-cards">
-            <!-- Spotlight cards will be dynamically loaded here -->
-        </div>
-    </section>
-
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Chamber of Commerce | All Rights Reserved</p>
+        <p>&copy; 2025 Anime and Art Community. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

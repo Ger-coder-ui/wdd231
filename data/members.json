@@ -1,0 +1,22 @@
+{
+  "members": [
+    {
+      "name": "Sunrise Bakery",
+      "address": "123 Main St",
+      "phone": "555-111-2222",
+      "website": "https://sunrisebakery.com",
+      "image": "member1.webp",
+      "membership": 3,
+      "description": "Fresh artisan breads and pastries."
+    },
+    {
+      "name": "Peak Fitness",
+      "address": "456 Elm St",
+      "phone": "555-333-4444",
+      "website": "https://peakfitness.com",
+      "image": "member2.webp",
+      "membership": 2,
+      "description": "Local gym and wellness center."
+    }
+  ]
+}

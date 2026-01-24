@@ -1,9 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official business directory for the City Chamber of Commerce">
+  <meta name="author" content="Gerald Mango">
+  <title>Directory |  City Chamber of Commerce</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="Example City Chamber of Commerce Directory">
+  <meta property="og:description" content="Explore local businesses that power our community.">
+  <meta property="og:image" content="https://yourdomain.com/chamber/images/chamber-og.webp">
+  <meta property="og:url" content="https://yourdomain.com/chamber/directory.html">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+<header>
+  <h1>City Chamber of Commerce</h1>
+  <button id="menuBtn">☰</button>
+  <nav id="navMenu">
+    <a href="#">Home</a>
+    <a href="#">Directory</a>
+    <a href="#">Join</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
 <main>
-  <h2>Business Directory</h2>
-  <section class="directory">
-    <article>
-      <h3>ABC Construction</h3>
-      <p>Construction Services</p>
-    </article>
+  <section class="directory-controls">
+    <button id="gridView">🔲 Grid</button>
+    <button id="listView">📄 List</button>
   </section>
+
+  <section id="members" class="grid"></section>
 </main>
+
+<footer>
+  <p>Contact: info@examplechamber.org | (555) 123-4567</p>
+  <p>
+    © <span id="year"></span> City Chamber |
+    Gerald Mango | WDD 231
+  </p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+<script src="js/directory.js"></script>
+</body>
+</html>
+

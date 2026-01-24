@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: none;
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem;
+}
+
+#members.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#members.list section {
+  display: block;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}

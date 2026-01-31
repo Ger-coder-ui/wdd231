@@ -1,0 +1,31 @@
+{
+  "members": [
+    {
+      "name": "Alpha Construction",
+      "logo": "alpha.png",
+      "address": "12 Main Street, Bulawayo",
+      "phone": "+263 77 123 4567",
+      "website": "https://alphaconstruction.co.zw",
+      "membership": "Gold",
+      "category": "Construction"
+    },
+    {
+      "name": "Matobo Safaris",
+      "logo": "matobo.png",
+      "address": "5 Hillside Road, Bulawayo",
+      "phone": "+263 71 987 6543",
+      "website": "https://matobosafaris.com",
+      "membership": "Silver",
+      "category": "Tourism"
+    },
+    {
+      "name": "City Tech Solutions",
+      "logo": "citytech.png",
+      "address": "88 Fife Street, Bulawayo",
+      "phone": "+263 78 555 1212",
+      "website": "https://citytech.co.zw",
+      "membership": "Bronze",
+      "category": "Technology"
+    }
+  ]
+}

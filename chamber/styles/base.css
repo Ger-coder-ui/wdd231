@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  .spotlights {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

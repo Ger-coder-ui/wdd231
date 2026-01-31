@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bulawayo City Chamber of Commerce</title>
-  <meta name="description" content="Supporting local businesses in Bulawayo.">
+  <meta name="description" content="Supporting and connecting local businesses in Bulawayo, Zimbabwe.">
 
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/homepage.css">
+  <link rel="stylesheet" href="styles/base.css">
+
+  <script defer src="scripts/weather.js"></script>
+  <script defer src="scripts/spotlight.js"></script>
 </head>
 
 <body>
@@ -16,7 +19,7 @@
     <button id="menu-btn">☰</button>
     <nav id="nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
@@ -25,31 +28,47 @@
   </header>
 
   <main>
+
+    <!-- HERO SECTION -->
     <section class="hero">
-      <h2>Connecting Businesses. Building Community.</h2>
-      <a class="cta" href="join.html">Join the Chamber</a>
-    </section>
-
-    <section class="weather">
-      <h3>Current Weather</h3>
-      <p id="weather">Loading...</p>
-    </section>
-
-    <section class="spotlights">
-      <h3>Business Spotlights</h3>
-      <div class="spotlight-grid">
-        <article>Business One</article>
-        <article>Business Two</article>
-        <article>Business Three</article>
+      <img src="images/logojpg.jpg" alt="Bulawayo city skyline">
+      <div class="hero-text">
+        <h2>Connecting Businesses. Building Community.</h2>
+        <a class="cta" href="join.html">Join the Chamber</a>
       </div>
     </section>
+
+    <!-- CURRENT EVENTS -->
+    <section class="events">
+      <h3>Current Events</h3>
+      <p>📢 Business Networking Breakfast – March 20</p>
+      <p>🏗️ Infrastructure Development Forum – April 5</p>
+    </section>
+
+    <!-- WEATHER -->
+    <section class="weather">
+      <h3>Weather in Bulawayo</h3>
+      <p><strong>Current:</strong> <span id="temp"></span>°C – <span id="description"></span></p>
+
+      <div class="forecast">
+        <h4>3-Day Forecast</h4>
+        <p>Tomorrow: <span id="day1"></span>21°C</p>
+        <p>Day 2: <span id="day2"></span>24°C</p>
+        <p>Day 3: <span id="day3"></span>26°C</p>
+      </div>
+    </section>
+
+    <!-- SPOTLIGHTS -->
+    <section class="spotlights">
+      <h3>Member Spotlights</h3>
+      <div id="spotlight-container"></div>
+    </section>
+
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Bulawayo City</p>
+    <p>&copy; <span id="year"></span> Bulawayo City Chamber of Commerce</p>
   </footer>
-
-  <script src="js/main.js"></script>
-  <script src="js/directory.js"></script>
 </body>
 </html>
+

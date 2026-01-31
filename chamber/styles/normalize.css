@@ -88,3 +88,49 @@ footer {
     font-size: 1.5rem;
   }
 }
+.spotlights {
+  padding: 1rem;
+}
+
+.spotlight-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+}
+
+.spotlight-card img {
+  max-width: 120px;
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  background: gold;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.category {
+  font-style: italic;
+  color: #555;
+}
+
+.level {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .spotlight-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

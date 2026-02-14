@@ -3,48 +3,48 @@
     "name": "Historic Museum",
     "address": "123 Main St",
     "description": "Explore local history and heritage exhibits.",
-    "image": "images/museum.webp"
+    "image": "chamber/images/museum.webp"
   },
   {
     "name": "Riverwalk Park",
     "address": "45 River Rd",
     "description": "Scenic walking paths and picnic areas.",
-    "image": "images/park.webp"
+    "image": "chamber/images/river walk.webp"
   },
   {
     "name": "City Library",
     "address": "78 Knowledge Ave",
     "description": "Books, study rooms, and community events.",
-    "image": "images/library.webp"
+    "image": "chamber/images/city library.webp"
   },
   {
     "name": "Art Gallery",
     "address": "22 Canvas Ln",
     "description": "Featuring local artists and rotating exhibits.",
-    "image": "images/gallery.webp"
+    "image": "chamber/images/art gallery.webp"
   },
   {
     "name": "Downtown Theater",
     "address": "90 Stage Dr",
     "description": "Live performances and movie screenings.",
-    "image": "images/theater.webp"
+    "image": "chamber/images/downtown theatre.webp"
   },
   {
     "name": "Farmers Market",
     "address": "15 Market Sq",
     "description": "Fresh produce and handmade goods.",
-    "image": "images/market.webp"
+    "image": "chamber/images/farmers market.webp"
   },
   {
     "name": "Community Center",
     "address": "10 Unity Blvd",
     "description": "Events, fitness classes, and meetings.",
-    "image": "images/community.webp"
+    "image": "chamber/images/community centre.webp"
   },
   {
     "name": "Lakeview Trail",
     "address": "200 Lakeside Dr",
     "description": "Nature trail with scenic lake views.",
-    "image": "images/lake.webp"
+    "image": "chamber/images/lakeview trail.webp"
   }
 ]

@@ -17,7 +17,7 @@
   <meta property="og:url" content="https://yourdomain.com/chamber/directory.html">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/normalize.cs">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 </head>
@@ -25,13 +25,16 @@
 <body>
 <header>
   <h1>City Chamber of Commerce</h1>
-  <button id="menuBtn">☰</button>
-  <nav id="navMenu">
-    <a href="#">Home</a>
-    <a href="#">Directory</a>
-    <a href="#">Join</a>
-    <a href="#">Contact</a>
-  </nav>
+  <button id="menuBtn" aria-label="Open navigation menu" aria-expanded="false">
+  ☰
+</button>
+
+  <nav id="navMenu" aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="directory.html" class="active" aria-current="page">Directory</a>
+  <a href="join.html">Join</a>
+  <a href="contact.html">Contact</a>
+</nav>
 </header>
 
 <main>
@@ -52,7 +55,7 @@
   <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
 
-<script src="js/directory.js"></script>
+<script src="scripts/directory.js"></script>
 </body>
 </html>
 

@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+
+  #menuBtn {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+  }
+
+  #members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .member-card {
+    min-height: 100%;
+  }
+
+  #members.list .member-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #members.list .member-card img {
+    display: none;
+  }
+
+}
+.photo-placeholder img {
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 left;
+}

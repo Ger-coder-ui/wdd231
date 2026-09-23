@@ -35,3 +35,11 @@
   }
 
 }
+.photo-placeholder img {
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 left;
+}

@@ -1,4 +1,18 @@
+/* ========================================
+   LARGE SCREEN STYLES
+======================================== */
+
 @media (min-width: 768px) {
+  .hero img {
+    height: 350px;
+    object-fit: cover;
+  }
+}
+
+
+  /* ======================================
+     NAVIGATION
+  ====================================== */
 
   #menuBtn {
     display: none;
@@ -6,27 +20,44 @@
 
   nav {
     display: flex;
+
     justify-content: center;
+
     gap: 1rem;
   }
 
   nav a {
     display: inline-block;
+
     padding: 0.75rem 1.25rem;
   }
 
+
+  /* ======================================
+     DIRECTORY GRID
+  ====================================== */
+
   #members.grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:
+      repeat(3, 1fr);
   }
 
   .member-card {
     min-height: 100%;
   }
 
+
+  /* ======================================
+     DIRECTORY LIST
+  ====================================== */
+
   #members.list .member-card {
     display: grid;
+
     grid-template-columns: 1fr 3fr;
+
     align-items: center;
+
     gap: 1rem;
   }
 
@@ -34,12 +65,82 @@
     display: none;
   }
 
-}
-.photo-placeholder img {
-    width: 300px;
-    max-width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
-    margin: 0 left;
+
+  /* ======================================
+     HOME HERO
+  ====================================== */
+
+  .hero-content {
+    left: 2rem;
+
+    right: auto;
+
+    bottom: 2rem;
+
+    max-width: 550px;
+
+    padding: 1.5rem;
+  }
+
+
+  /* ======================================
+     HOME EVENTS
+  ====================================== */
+
+  .events,
+  .weather,
+  .spotlights {
+    padding: 1.5rem;
+  }
+
+  .events {
+    display: grid;
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 1rem;
+  }
+
+  .events h2 {
+    grid-column: 1 / -1;
+  }
+
+  .event-card {
+    margin-bottom: 0;
+  }
+
+
+  /* ======================================
+     HOME WEATHER
+  ====================================== */
+
+  .weather {
+    display: grid;
+
+    grid-template-columns:
+      1fr 2fr;
+
+    gap: 1.5rem;
+  }
+
+  .weather h2 {
+    grid-column: 1 / -1;
+  }
+
+  #forecastContainer {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+
+  /* ======================================
+     MEMBER SPOTLIGHTS
+  ====================================== */
+
+  .spotlight-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
 }

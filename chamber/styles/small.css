@@ -1,3 +1,7 @@
+/* ========================================
+   GENERAL
+======================================== */
+
 * {
   box-sizing: border-box;
 }
@@ -9,6 +13,11 @@ body {
   background-color: #f5f5f5;
 }
 
+
+/* ========================================
+   HEADER
+======================================== */
+
 header {
   background-color: #12355b;
   color: white;
@@ -19,6 +28,11 @@ header {
 header h1 {
   margin: 0 0 1rem;
 }
+
+
+/* ========================================
+   MOBILE NAVIGATION
+======================================== */
 
 #menuBtn {
   display: block;
@@ -49,25 +63,219 @@ nav a.active {
   background-color: #2878b5;
 }
 
+
+/* ========================================
+   MAIN
+======================================== */
+
 main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
 }
 
+
+/* ========================================
+   HOME PAGE - HERO
+======================================== */
+
+.hero {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+
+  background-color: rgba(18, 53, 91, 0.9);
+
+  color: white;
+  padding: 1rem;
+}
+
+.hero-content h2 {
+  margin-top: 0;
+  color: white;
+}
+
+.hero-content p {
+  line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-block;
+
+  background-color: #2878b5;
+  color: white;
+
+  text-decoration: none;
+
+  padding: 0.75rem 1.25rem;
+
+  border-radius: 4px;
+
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #12355b;
+}
+
+
+/* ========================================
+   EVENTS
+======================================== */
+
+.events,
+.weather,
+.spotlights {
+  background-color: white;
+
+  padding: 1rem;
+
+  margin-bottom: 1.5rem;
+
+  border-radius: 6px;
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+  color: #12355b;
+}
+
+.event-card {
+  border: 1px solid #ccc;
+
+  padding: 1rem;
+
+  margin-bottom: 1rem;
+}
+
+.event-card:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ========================================
+   WEATHER
+======================================== */
+
+#currentWeather {
+  background-color: #f5f5f5;
+
+  padding: 1rem;
+
+  margin-bottom: 1rem;
+}
+
+#forecastContainer {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+}
+
+#forecastContainer article {
+  border: 1px solid #ccc;
+
+  padding: 1rem;
+
+  background-color: #f5f5f5;
+
+  text-align: center;
+}
+
+#forecastContainer h4 {
+  margin-top: 0;
+
+  color: #12355b;
+}
+
+
+/* ========================================
+   MEMBER SPOTLIGHTS
+======================================== */
+
+.spotlight-grid {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+}
+
+.spotlight-card {
+  background-color: #f5f5f5;
+
+  border: 1px solid #ccc;
+
+  padding: 1rem;
+
+  text-align: center;
+
+  border-radius: 6px;
+}
+
+.spotlight-card img {
+  width: 120px;
+
+  height: 120px;
+
+  object-fit: contain;
+
+  display: block;
+
+  margin: 0 auto 1rem;
+}
+
+.spotlight-card h3 {
+  color: #12355b;
+}
+
+.spotlight-card a {
+  color: #005a9c;
+
+  font-weight: bold;
+}
+
+
+/* ========================================
+   DIRECTORY CONTROLS
+======================================== */
+
 .directory-controls {
   display: flex;
+
   justify-content: center;
+
   gap: 1rem;
+
   margin-bottom: 1.5rem;
 }
 
 .directory-controls button {
   padding: 0.7rem 1.2rem;
+
   border: none;
+
   background-color: #12355b;
+
   color: white;
+
   cursor: pointer;
+
   border-radius: 4px;
 }
 
@@ -75,45 +283,69 @@ main {
   background-color: #2878b5;
 }
 
+
+/* ========================================
+   DIRECTORY GRID
+======================================== */
+
 #members.grid {
   display: grid;
+
   grid-template-columns: 1fr;
+
   gap: 1rem;
 }
 
 .member-card {
   background-color: white;
+
   border: 1px solid #ccc;
+
   padding: 1rem;
+
   border-radius: 6px;
 }
 
 .member-card img {
   display: block;
+
   width: 100%;
+
   max-width: 250px;
+
   height: auto;
+
   margin: 0 auto 1rem;
 }
 
 .member-card h2 {
   color: #12355b;
+
   margin-top: 0;
 }
 
 .member-card a {
   color: #005a9c;
+
   font-weight: bold;
 }
 
+
+/* ========================================
+   DIRECTORY LIST
+======================================== */
+
 #members.list {
   display: flex;
+
   flex-direction: column;
+
   gap: 0.5rem;
 }
 
 #members.list .member-card {
   display: flex;
+
   align-items: center;
 }
 
@@ -121,35 +353,79 @@ main {
   display: none;
 }
 
-footer {
-  margin-top: 2rem;
-  padding: 1rem;
-  text-align: center;
-  background-color: #12355b;
-  color: white;
+
+/* ========================================
+   PHOTO PLACEHOLDER
+======================================== */
+
+.photo-placeholder img {
+  width: 300px;
+
+  max-width: 100%;
+
+  height: 300px;
+
+  object-fit: cover;
+
+  display: block;
+
+  margin: 0 auto;
 }
 
+
+/* ========================================
+   COURSE LIST
+======================================== */
+
 #courseList {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 10px;
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 10px;
+
+  padding: 10px;
 }
 
 .course-card {
-    background-color: #d9d9d9;
-    border: 1px solid #999;
-    border-radius: 5px;
-    padding: 12px;
-    text-align: center;
-    font-weight: 500;
-    min-height: 45px;
+  background-color: #d9d9d9;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border: 1px solid #999;
+
+  border-radius: 5px;
+
+  padding: 12px;
+
+  text-align: center;
+
+  font-weight: 500;
+
+  min-height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
 }
 
 .course-card p {
-    margin: 0;
+  margin: 0;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+  margin-top: 2rem;
+
+  padding: 1rem;
+
+  text-align: center;
+
+  background-color: #12355b;
+
+  color: white;
 }

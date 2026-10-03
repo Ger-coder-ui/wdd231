@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Apply for membership at the City Chamber of Commerce and explore membership benefits.">
+    <meta name="author" content="Gerald Mango">
+
+    <meta property="og:title" content="Join | City Chamber of Commerce">
+    <meta property="og:description"
+          content="Join the City Chamber of Commerce and grow your business network.">
+    <meta property="og:image" content="images/chamber-og.webp">
+    <meta property="og:url" content="join.html">
+
+    <title>Join | City Chamber of Commerce</title>
+
+    <link rel="icon" href="images/business4.jpg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>City Chamber of Commerce</h1>
+
+        <button id="menuBtn"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navMenu">
+            ☰
+        </button>
+
+        <nav id="navMenu" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active" aria-current="page">Join</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <section class="join-intro">
+            <h2>Join the City Chamber of Commerce</h2>
+            <p>
+                Become part of a growing business community.
+                Choose a membership level that suits your
+                organization and enjoy opportunities to connect,
+                learn, and grow.
+            </p>
+        </section>
+
+        <div class="join-layout">
+            <!-- Membership application form -->
+            <section class="form-section">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html" id="joinForm">
+                    <label for="firstName">
+                        First Name
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label for="lastName">
+                        Last Name
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <label for="orgTitle">
+                        Organizational Title
+                        <input
+                            type="text"
+                            id="orgTitle"
+                            name="orgTitle"
+                            title="Enter your organizational title using at least seven letters, spaces, or hyphens"
+                            autocomplete="organization-title"
+                            pattern="(?=.*[A-Za-z])[A-Za-z -]{7,}"
+                            placeholder="e.g. Sales Manager"
+                            required>
+                    </label>
+
+                    <label for="email">
+                        Email Address
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            title="Enter a valid email address"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required>
+                    </label>
+
+                    <label for="phone">
+                        Mobile Phone Number
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            title="Enter your mobile phone number"
+                            autocomplete="tel"
+                            placeholder="+263 71 123 4567"
+                            required>
+                    </label>
+
+                    <label for="business">
+                        Business/Organization Name
+                        <input
+                            type="text"
+                            id="business"
+                            name="business"
+                            title="Enter your business or organization name"
+                            autocomplete="organization"
+                            required>
+                    </label>
+
+                    <label for="membership">
+                        Membership Level
+                        <select
+                            id="membership"
+                            name="membership"
+                            title="Choose your membership level"
+                            required>
+                            <option value="" disabled selected>
+                                Select a membership level
+                            </option>
+                            <option value="np">NP Membership - Free</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label for="description">
+                        Business/Organization Description
+                        <textarea
+                            id="description"
+                            name="description"
+                            title="Describe your business or organization"
+                            rows="5"
+                            placeholder="Tell us about your organization..."></textarea>
+                    </label>
+
+                    <input
+                        type="hidden"
+                        id="timestamp"
+                        name="timestamp">
+
+                    <input type="submit" value="Submit Application"
+                           class="submit-button">
+                </form>
+            </section>
+
+            <!-- Membership cards -->
+            <section class="membership-section">
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+                    <article class="membership-card np-card">
+                        <h3>NP Membership</h3>
+                        <p class="price">Free</p>
+                        <p>For nonprofit organizations.</p>
+                        <button type="button" class="info-button"
+                                data-dialog="npDialog">
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card bronze-card">
+                        <h3>Bronze Membership</h3>
+                        <p class="price">$50/year</p>
+                        <p>For growing small businesses.</p>
+                        <button type="button" class="info-button"
+                                data-dialog="bronzeDialog">
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card silver-card">
+                        <h3>Silver Membership</h3>
+                        <p class="price">$150/year</p>
+                        <p>For businesses seeking more exposure.</p>
+                        <button type="button" class="info-button"
+                                data-dialog="silverDialog">
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card gold-card">
+                        <h3>Gold Membership</h3>
+                        <p class="price">$300/year</p>
+                        <p>For businesses seeking premium benefits.</p>
+                        <button type="button" class="info-button"
+                                data-dialog="goldDialog">
+                            View Benefits
+                        </button>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- Membership benefit dialogs -->
+        <dialog id="npDialog" class="membership-dialog">
+            <h2>NP Membership Benefits</h2>
+            <ul>
+                <li>Free membership for nonprofit organizations</li>
+                <li>Access to chamber networking events</li>
+                <li>Community announcements and updates</li>
+                <li>Basic business directory listing</li>
+            </ul>
+            <button type="button" class="close-dialog">Close</button>
+        </dialog>
+
+        <dialog id="bronzeDialog" class="membership-dialog">
+            <h2>Bronze Membership Benefits</h2>
+            <ul>
+                <li>All basic chamber networking benefits</li>
+                <li>Business directory listing</li>
+                <li>Discounted training workshops</li>
+                <li>Access to selected business events</li>
+            </ul>
+            <button type="button" class="close-dialog">Close</button>
+        </dialog>
+
+        <dialog id="silverDialog" class="membership-dialog">
+            <h2>Silver Membership Benefits</h2>
+            <ul>
+                <li>All Bronze membership benefits</li>
+                <li>Priority event registration</li>
+                <li>Advertising opportunities</li>
+                <li>Discounts on selected chamber events</li>
+                <li>Eligibility for member spotlights</li>
+            </ul>
+            <button type="button" class="close-dialog">Close</button>
+        </dialog>
+
+        <dialog id="goldDialog" class="membership-dialog">
+            <h2>Gold Membership Benefits</h2>
+            <ul>
+                <li>All Silver membership benefits</li>
+                <li>Premium homepage spotlight opportunities</li>
+                <li>Priority advertising placement</li>
+                <li>Exclusive business networking events</li>
+                <li>Leadership and training opportunities</li>
+            </ul>
+            <button type="button" class="close-dialog">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>
+            Contact: geraldmango3@gmail.com |
+            +263 71 775 4891
+        </p>
+
+        <p>
+            © <span id="year"></span> City Chamber |
+            Gerald Mango | wdd 231
+        </p>
+
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

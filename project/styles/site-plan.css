@@ -193,47 +193,47 @@ main {
 }
 
 /* Wireframe sections */
-.wf-header,
-.wf-hero,
-.wf-block,
-.wf-footer {
+.header,
+.hero,
+.block,
+.footer {
     margin-bottom: 0.5rem;
     padding: 0.7rem 0.35rem;
     border: 1px solid #555555;
     background: #F2F2F2;
 }
 
-.wf-header {
+header {
     background: var(--accent-color);
     font-weight: bold;
 }
 
-.wf-header span {
+header span {
     display: block;
     margin-top: 0.25rem;
     font-weight: normal;
 }
 
-.wf-hero {
+.hero {
     padding: 1.4rem 0.35rem;
     background: #DDDDDD;
 }
 
-.wf-columns {
+.columns {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.35rem;
 }
 
-.wf-columns .wf-block {
+.columns block {
     min-height: 4rem;
 }
 
-.contact-columns {
+contact-columns {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.wf-footer {
+footer {
     margin-bottom: 0;
     background: var(--primary-color);
     color: var(--white-color);

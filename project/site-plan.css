@@ -1,0 +1,287 @@
+
+/* =====================================
+   HEAVENLY MOMENTS — SITE PLAN CSS
+   ===================================== */
+
+/* 1. Color scheme */
+:root {
+    --primary-color: #6D3B63;
+    --accent-color: #E9C6D8;
+    --background-color: #FFF9FC;
+    --text-color: #333333;
+    --white-color: #FFFFFF;
+    --border-color: #C9B7C5;
+}
+
+/* 2. Global styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* 3. Typography */
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.25;
+}
+
+/* 4. Header */
+.site-header {
+    padding: 2.5rem 1rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0.2rem 0;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.eyebrow {
+    margin: 0;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.tagline {
+    margin-bottom: 0;
+}
+
+/* 5. Navigation */
+.page-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.25rem;
+    padding: 1rem;
+    background: var(--accent-color);
+}
+
+.page-nav a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.page-nav a:hover,
+.page-nav a:focus {
+    text-decoration: underline;
+}
+
+/* 6. Main content */
+main {
+    width: min(1000px, 92%);
+    margin: 0 auto;
+}
+
+.plan-section {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+}
+
+.plan-section h2 {
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+}
+
+/* 7. Color scheme examples */
+.color-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.color-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.color-item h3,
+.color-item p {
+    margin: 0 0 0.35rem;
+}
+
+.swatch {
+    flex: 0 0 4.5rem;
+    height: 4.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.4rem;
+}
+
+.plum {
+    background: #6D3B63;
+}
+
+.blush {
+    background: #E9C6D8;
+}
+
+.cream {
+    background: #FFF9FC;
+}
+
+.charcoal {
+    background: #333333;
+}
+
+/* 8. Typography examples */
+.type-sample {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-left: 4px solid var(--accent-color);
+    background: var(--background-color);
+}
+
+.sample-heading {
+    color: var(--primary-color);
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.sample-body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 9. Wireframe layouts */
+.wireframe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.wireframe-grid h3 {
+    color: var(--primary-color);
+}
+
+.wireframe {
+    padding: 0.5rem;
+    border: 2px solid #333333;
+    background: var(--white-color);
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.mobile-wireframe {
+    width: min(100%, 280px);
+    margin: 0 auto;
+}
+
+.desktop-wireframe {
+    width: 100%;
+}
+
+/* Wireframe sections */
+.wf-header,
+.wf-hero,
+.wf-block,
+.wf-footer {
+    margin-bottom: 0.5rem;
+    padding: 0.7rem 0.35rem;
+    border: 1px solid #555555;
+    background: #F2F2F2;
+}
+
+.wf-header {
+    background: var(--accent-color);
+    font-weight: bold;
+}
+
+.wf-header span {
+    display: block;
+    margin-top: 0.25rem;
+    font-weight: normal;
+}
+
+.wf-hero {
+    padding: 1.4rem 0.35rem;
+    background: #DDDDDD;
+}
+
+.wf-columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.35rem;
+}
+
+.wf-columns .wf-block {
+    min-height: 4rem;
+}
+
+.contact-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.wf-footer {
+    margin-bottom: 0;
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* 10. Footer */
+.site-footer {
+    margin-top: 2rem;
+    padding: 1.25rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* 11. Responsive design */
+@media screen and (max-width: 700px) {
+    .wireframe-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-section {
+        padding: 1rem;
+    }
+
+    .page-nav {
+        gap: 0.5rem 0.85rem;
+    }
+
+    .color-item {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        width: 94%;
+    }
+
+    .plan-section {
+        padding: 0.8rem;
+    }
+
+    .swatch {
+        flex-basis: 3.5rem;
+        height: 3.5rem;
+    }
+}

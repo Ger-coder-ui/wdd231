@@ -1,0 +1,156 @@
+!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Book Us | Heavenly Moments</title>
+  <meta name="description" content="Contact Heavenly Moments in Bulawayo to enquire about picnics, décor, catering, gift hampers and event packages.">
+  
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Gerald Mango">
+<meta property="og:site_name" content="Heavenly Moments">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_ZW">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+  <meta property="og:title" content="Book Heavenly Moments">
+  <meta property="og:description" content="Send an enquiry for your next celebration in Bulawayo.">
+  <meta property="og:image" content="images/heavenly-flyer-1.jpeg">
+  <meta property="og:url" content="contact.html">
+  <script type="module" src="scripts/contact.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Heavenly Moments home">
+      <span class="brand-mark" aria-hidden="true">HM</span>
+      <span class="brand-text"><strong>Heavenly Moments</strong><span>Creating moments worth remembering</span></span>
+    </a>
+    <button class="menu-button" id="menuBtn" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">☰</button>
+    <nav class="primary-nav" id="primaryNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" data-page="index">Home</a></li>
+        <li><a href="services.html" data-page="services">Services & Gallery</a></li>
+        <li><a href="contact.html" data-page="contact">Book Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Make it memorable</p>
+      <h1 class="page-title">Let's create your moment</h1>
+      <p>Tell us about your event. We will use your enquiry to understand the occasion and help you choose the right experience.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container form-layout">
+      <form class="form-card" action="thankyou.html" method="get">
+        <h2>Booking & enquiry form</h2>
+        <p class="required-note">Fields marked with * are required.</p>
+
+        <label for="name">Full name *
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </label>
+
+        <label for="email">Email address *
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </label>
+
+        <label for="phone">Phone number *
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+        </label>
+
+        <label for="eventType">What are you planning? *
+          <select id="eventType" name="eventType" required>
+            <option value="">Select an option</option>
+            <option>Picnic</option>
+            <option>Birthday</option>
+            <option>Proposal</option>
+            <option>Anniversary</option>
+            <option>Small event</option>
+            <option>Hotel/room décor</option>
+            <option>Catering</option>
+            <option>Gift hamper</option>
+            <option>Custom event</option>
+          </select>
+        </label>
+
+        <fieldset>
+          <legend>Preferred contact method *</legend>
+          <label class="check-label"><input type="radio" name="contactMethod" value="Phone" required> Phone</label>
+          <label class="check-label"><input type="radio" name="contactMethod" value="WhatsApp"> WhatsApp</label>
+          <label class="check-label"><input type="radio" name="contactMethod" value="Email"> Email</label>
+        </fieldset>
+
+        <label for="date">Preferred event date *
+          <input id="date" name="date" type="date" required>
+        </label>
+
+        <label for="guests">Estimated number of guests *
+          <input id="guests" name="guests" type="number" min="1" max="500" required>
+        </label>
+
+        <label for="message">Tell us about your vision *
+          <textarea id="message" name="message" required placeholder="Tell us what you are celebrating, your preferred location, colours or theme, and any other details."></textarea>
+        </label>
+
+        <label class="check-label">
+          <input type="checkbox" name="updates" value="Yes">
+          I would like occasional updates and inspiration from Heavenly Moments.
+        </label>
+
+        <button class="button" type="submit">Send enquiry</button>
+      </form>
+
+      <aside class="contact-card">
+        <h2>Contact Heavenly Moments</h2>
+        <p>Prefer to talk to us directly? We would love to hear from you.</p>
+        <ul class="contact-list">
+          <li><strong>Location:</strong> Bulawayo, Zimbabwe</li>
+          <li><strong>Phone:</strong> <a href="tel:+263788224934">0788 224 934</a></li>
+          <li><strong>Email:</strong> <a href="mailto:heavenlymoments7@gmail.com">heavenlymoments7@gmail.com</a></li>
+          <li><strong>Instagram:</strong> <a href="https://www.instagram.com/" target="_blank" rel="noopener">@heavenly_moments</a></li>
+          <li><strong>Facebook:</strong> <a href="https://www.facebook.com/" target="_blank" rel="noopener">Heavenly Moments</a></li>
+        </ul>
+        <div class="notice">
+          <strong>Planning tip:</strong> For larger events, contact us early so we have enough time to plan the décor, food and personalised details.
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section>
+      <h2>Heavenly Moments</h2>
+      <p>We create beautiful experiences so you can celebrate the moments that matter.</p>
+    </section>
+    <section>
+      <h3>Contact</h3>
+      <p>Bulawayo, Zimbabwe<br><a href="tel:+263788224934">0788 224 934</a><br><a href="mailto:heavenlymoments7@gmail.com">heavenlymoments7@gmail.com</a></p>
+    </section>
+    <section>
+      <h3>Follow us</h3>
+      <div class="social-links">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+      </div>
+    </section>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="currentYear"></span> Heavenly Moments. All rights reserved.</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </div>
+</footer>
+
+</body>
+</html>

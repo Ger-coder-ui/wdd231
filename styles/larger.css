@@ -1,0 +1,105 @@
+
+/* ==============================
+   WDD231 HOME PAGE - LARGER CSS
+   ============================== */
+
+@media screen and (min-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5%;
+        gap: 2rem;
+    }
+
+    .header-content {
+        flex: 0 1 auto;
+    }
+
+    /* HIDE HAMBURGER ON LARGE SCREENS */
+
+    #menuButton {
+        display: none;
+    }
+
+    /* DESKTOP NAVIGATION */
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.5rem;
+        margin-top: 0;
+    }
+
+    nav a {
+        padding: 0.75rem 1.25rem;
+    }
+
+    nav a.active {
+        border-left: none;
+        border-bottom: 3px solid var(--secondary);
+    }
+
+    /* MAIN LAYOUT */
+
+    main {
+        padding: 2rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    /* COURSES TAKE FULL WIDTH */
+
+    .courses-section {
+        grid-column: 1 / -1;
+    }
+
+    /* COURSE CARDS */
+
+    #courseList {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    /* STUDENT PHOTO */
+
+    .photo-placeholder img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 2rem;
+    }
+}
+
+/* EXTRA WIDE SCREENS */
+
+@media screen and (min-width: 1024px) {
+
+    main {
+        padding: 2.5rem;
+    }
+
+    .home-grid {
+        gap: 2rem;
+    }
+
+    .home-grid section {
+        padding: 1.75rem;
+    }
+
+    #courseList {
+        gap: 1.25rem;
+    }
+}

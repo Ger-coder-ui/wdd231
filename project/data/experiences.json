@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Sunset Picnic for Two",
+    "category": "Picnic",
+    "price": "$20",
+    "duration": "2 hours",
+    "description": "An intimate styled picnic with cushions, tableware and soft floral details."
+  },
+  {
+    "id": 2,
+    "name": "Celebration Picnic",
+    "category": "Picnic",
+    "price": "$40",
+    "duration": "3 hours",
+    "description": "A beautiful setup for birthdays, graduations and special milestones."
+  },
+  {
+    "id": 3,
+    "name": "Signature Luxury Picnic",
+    "category": "Picnic",
+    "price": "$60",
+    "duration": "3 hours",
+    "description": "Elevated styling with premium table d\u00e9cor, florals and personalised touches."
+  },
+  {
+    "id": 4,
+    "name": "Grand Celebration Picnic",
+    "category": "Picnic",
+    "price": "$100",
+    "duration": "4 hours",
+    "description": "Our fuller picnic experience with food, styling and memorable finishing details."
+  },
+  {
+    "id": 5,
+    "name": "Hotel Room Surprise",
+    "category": "D\u00e9cor",
+    "price": "From $45",
+    "duration": "90 minutes",
+    "description": "Romantic room d\u00e9cor for anniversaries, proposals, birthdays and surprises."
+  },
+  {
+    "id": 6,
+    "name": "Proposal Styling",
+    "category": "D\u00e9cor",
+    "price": "From $80",
+    "duration": "2 hours",
+    "description": "A carefully styled proposal scene designed around your story and chosen venue."
+  },
+  {
+    "id": 7,
+    "name": "Birthday D\u00e9cor",
+    "category": "D\u00e9cor",
+    "price": "From $60",
+    "duration": "2 hours",
+    "description": "Colourful, coordinated birthday d\u00e9cor that turns an ordinary venue into a celebration."
+  },
+  {
+    "id": 8,
+    "name": "Anniversary Setup",
+    "category": "D\u00e9cor",
+    "price": "From $70",
+    "duration": "2 hours",
+    "description": "Elegant romantic styling with candles, flowers, fabrics and personalised details."
+  },
+  {
+    "id": 9,
+    "name": "Gift Hamper",
+    "category": "Gifts",
+    "price": "From $25",
+    "duration": "48 hours",
+    "description": "Thoughtfully selected treats and keepsakes packaged for a meaningful surprise."
+  },
+  {
+    "id": 10,
+    "name": "Breakfast Hamper",
+    "category": "Gifts",
+    "price": "From $30",
+    "duration": "48 hours",
+    "description": "A curated breakfast selection suitable for birthdays, anniversaries and thank-yous."
+  },
+  {
+    "id": 11,
+    "name": "Fruit & Grazing Platter",
+    "category": "Catering",
+    "price": "From $35",
+    "duration": "24 hours",
+    "description": "Fresh fruit, savoury bites and beautifully arranged grazing options for your event."
+  },
+  {
+    "id": 12,
+    "name": "Dessert Table",
+    "category": "Catering",
+    "price": "From $55",
+    "duration": "24 hours",
+    "description": "A coordinated dessert display designed to complement your event theme."
+  },
+  {
+    "id": 13,
+    "name": "Intimate Dinner Setup",
+    "category": "Small Events",
+    "price": "From $90",
+    "duration": "4 hours",
+    "description": "A stylish intimate dinner experience with coordinated tablescape and d\u00e9cor."
+  },
+  {
+    "id": 14,
+    "name": "Girls' Day Experience",
+    "category": "Small Events",
+    "price": "From $75",
+    "duration": "3 hours",
+    "description": "A fun, photo-ready setup for friends, celebrations and memorable catch-ups."
+  },
+  {
+    "id": 15,
+    "name": "Custom Event Experience",
+    "category": "Events",
+    "price": "Quote",
+    "duration": "Flexible",
+    "description": "A personalised event package combining planning, d\u00e9cor, food and styling around your needs."
+  }
+]

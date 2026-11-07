@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Thank you for applying to join the City Chamber of Commerce.">
+    <meta name="author" content="Gerald Mango">
+
+    <title>Application Received | City Chamber of Commerce</title>
+
+    <link rel="icon" href="images/business4.jpg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>City Chamber of Commerce</h1>
+
+        <button id="menuBtn"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navMenu">
+            ☰
+        </button>
+
+        <nav id="navMenu" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <section class="thankyou-section">
+            <h2>Thank You for Applying!</h2>
+
+            <p>
+                Your membership application has been submitted
+                successfully. We appreciate your interest in
+                joining the City Chamber of Commerce.
+            </p>
+
+            <h3>Application Details</h3>
+
+            <div class="application-details">
+                <p><strong>First Name:</strong>
+                    <span id="displayFirstName"></span>
+                </p>
+
+                <p><strong>Last Name:</strong>
+                    <span id="displayLastName"></span>
+                </p>
+
+                <p><strong>Email:</strong>
+                    <span id="displayEmail"></span>
+                </p>
+
+                <p><strong>Mobile Phone:</strong>
+                    <span id="displayPhone"></span>
+                </p>
+
+                <p><strong>Business Name:</strong>
+                    <span id="displayBusiness"></span>
+                </p>
+
+                <p><strong>Application Date:</strong>
+                    <span id="displayTimestamp"></span>
+                </p>
+            </div>
+
+
+    <footer>
+        <p>
+            Contact: geraldmango3@gmail.com |
+            +263 71 775 4891
+        </p>
+
+        <p>
+            © <span id="year"></span> City Chamber |
+            Gerald Mango | wdd 231
+        </p>
+
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

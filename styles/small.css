@@ -1,0 +1,299 @@
+
+/* ==============================
+   WDD231 HOME PAGE - SMALL CSS
+   ============================== */
+
+:root {
+    --primary: #1e3a5f;
+    --primary-light: #2878b5;
+    --secondary: #f4b41a;
+    --background: #f5f7fa;
+    --white: #ffffff;
+    --text: #333333;
+    --completed: #e5f2e9;
+    --border: #d5dce5;
+    --font: 'Roboto', sans-serif;
+}
+
+/* GENERAL STYLING */
+
+body {
+    font-family: var(--font);
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    color: var(--primary);
+}
+
+h1 {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+h2 {
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary);
+}
+
+p {
+    margin-top: 0;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.site-branding img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+/* HAMBURGER BUTTON */
+
+#menuButton {
+    display: block;
+    background: none;
+    color: var(--white);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 0.4rem 0.7rem;
+    font-size: 1.6rem;
+}
+
+#menuButton:hover,
+#menuButton:focus-visible {
+    border-color: var(--secondary);
+}
+
+/* MOBILE NAVIGATION */
+
+nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--primary-light);
+}
+
+nav a.active {
+    border-left: 4px solid var(--secondary);
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+/* CONTENT SECTIONS */
+
+.home-grid section {
+    background-color: var(--white);
+    padding: 1.25rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* ABOUT SECTION */
+
+.about p {
+    line-height: 1.8;
+}
+
+/* STUDENT PHOTO */
+
+.photo-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-placeholder img {
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* COURSE FILTER BUTTONS */
+
+.course-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+.course-buttons button {
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--primary);
+    padding: 0.7rem 1.4rem;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+}
+
+.course-buttons button:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-color: var(--secondary);
+}
+
+.course-buttons button:focus-visible {
+    outline: 3px solid var(--secondary);
+    outline-offset: 3px;
+}
+
+/* COURSE CARDS */
+
+#courseList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.course-card {
+    background-color: #e7ebf0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.35rem;
+    min-height: 75px;
+}
+
+.course-card p {
+    margin: 0;
+}
+
+.course-card.completed {
+    background-color: var(--completed);
+    border: 2px solid #398653;
+    color: #205c35;
+}
+
+.credit-total {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1.25rem;
+    padding: 1rem;
+    background-color: #edf1f6;
+    border-radius: 6px;
+}
+
+#creditTotal {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.4rem;
+    transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: var(--secondary);
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#lastModified {
+    font-size: 0.85rem;
+}
+
+/* ACCESSIBILITY */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--secondary);
+    outline-offset: 3px;
+}
+
+/* Active course filter button */
+
+.course-buttons button.active {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-color: var(--secondary);
+}

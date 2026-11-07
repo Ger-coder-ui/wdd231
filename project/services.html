@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Services & Gallery | Heavenly Moments</title>
+  <meta name="description" content="Explore Heavenly Moments picnic experiences, event décor, catering, gift hampers and small event services in Bulawayo.">
+  
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Gerald Mango">
+<meta property="og:site_name" content="Heavenly Moments">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_ZW">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+  <meta property="og:title" content="Services & Gallery | Heavenly Moments">
+  <meta property="og:description" content="Explore our picnic, décor, catering, gift hamper and small event experiences.">
+  <meta property="og:image" content="images/heavenly-flyer-2.jpeg">
+  <meta property="og:url" content="services.html">
+  <script type="module" src="scripts/services.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Heavenly Moments home">
+      <span class="brand-mark" aria-hidden="true">HM</span>
+      <span class="brand-text"><strong>Heavenly Moments</strong><span>Creating moments worth remembering</span></span>
+    </a>
+    <button class="menu-button" id="menuBtn" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">☰</button>
+    <nav class="primary-nav" id="primaryNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" data-page="index">Home</a></li>
+        <li><a href="services.html" data-page="services">Services & Gallery</a></li>
+        <li><a href="contact.html" data-page="contact">Book Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Explore our experiences</p>
+      <h1 class="page-title">Services & Gallery</h1>
+      <p>Choose an experience, browse our offerings and imagine what we can create for your special occasion.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="experiences-heading">
+    <div class="container">
+      <div class="section-heading">
+        <h2 id="experiences-heading">Our experiences</h2>
+        <p>Use the filters to explore different services.</p>
+      </div>
+      <div id="filters" class="filter-bar" aria-label="Experience categories"></div>
+      <div id="experienceGrid" class="card-grid experience-grid" aria-live="polite">
+        <p>Loading experiences...</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section-heading">
+        <h2 id="gallery-heading">A glimpse of Heavenly Moments</h2>
+        <p>Our promotional flyers reflect the elegant, warm style we bring to events.</p>
+      </div>
+      <div class="gallery-grid">
+        <button class="gallery-card" type="button" data-gallery-title="Our signature style" data-gallery-description="Elegant picnic tables, gift hampers, catering displays and intimate event styling." data-gallery-image="images/heavenly-flyer-1.jpeg">
+          <img src="images/heavenly-flyer-1.jpeg" alt="Heavenly Moments services promotional flyer" loading="lazy" width="1200" height="1600">
+          <span>Our signature style</span>
+        </button>
+        <button class="gallery-card" type="button" data-gallery-title="Picnic experiences" data-gallery-description="Styled picnic experiences designed for birthdays, proposals, anniversaries, date nights and girls' days." data-gallery-image="images/heavenly-flyer-2.jpeg">
+          <img src="images/heavenly-flyer-2.jpeg" alt="Heavenly Moments picnic experiences promotional flyer" loading="lazy" width="1200" height="1600">
+          <span>Picnic experiences</span>
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog class="modal" id="experienceModal" aria-labelledby="modalTitle">
+  <div class="modal-panel">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close details">×</button>
+    <h2 id="modalTitle">Experience details</h2>
+    <div id="modalContent"></div>
+  </div>
+</dialog>
+
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section>
+      <h2>Heavenly Moments</h2>
+      <p>We create beautiful experiences so you can celebrate the moments that matter.</p>
+    </section>
+    <section>
+      <h3>Contact</h3>
+      <p>Bulawayo, Zimbabwe<br><a href="tel:+263788224934">0788 224 934</a><br><a href="mailto:heavenlymoments7@gmail.com">heavenlymoments7@gmail.com</a></p>
+    </section>
+    <section>
+      <h3>Follow us</h3>
+      <div class="social-links">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+      </div>
+    </section>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="currentYear"></span> Heavenly Moments. All rights reserved.</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </div>
+</footer>
+
+</body>
+</html>
